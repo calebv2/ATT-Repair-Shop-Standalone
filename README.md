@@ -28,7 +28,7 @@ Place the building on a clear site at floor elevation. Deposit a damaged weapon 
 
 ## NPC cosmetics
 
-Run commands in the server/admin console while the source player is online. Use their exact username and quote names containing spaces.
+These commands work on any server running the server mod. Run them in that server's admin console with console permissions, while the source player is online on that server. Use their exact username and quote names containing spaces.
 
 ```text
 repairshop outfit copy keeper "PlayerName"
@@ -39,7 +39,7 @@ repairshop outfit reset keeper
 repairshop outfit reset blacksmith
 ```
 
-Each worker has its own saved appearance, including body type. Settings are stored in `UserData/RepairShop/worker-outfits.json`.
+Each worker has its own saved appearance, including body type. Change the player's outfit between copy commands to dress the two workers differently. Settings are saved separately on the hosting server in `UserData/RepairShop/worker-outfits.json` and apply to its current workers. Use `reload` after manually editing that file. Outfit commands do not require a server restart.
 
 ## Version 0.2.30
 
